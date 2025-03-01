@@ -1983,3 +1983,31 @@ body {
     opacity: 1;
   }
 }
+.title_text {
+  text-align: center;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-shadow: 0 0 20px white;
+  letter-spacing: 0px;
+  font-size: 2em;
+  font-weight: bold;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  opacity: 0.7; /* Ban đầu hiện */
+  white-space: nowrap;
+}
+
+@media (min-width: 500px) {
+  .title_text {
+    letter-spacing: 20px;
+  }
+}
